@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>V7 - سكان واكسب</title>
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap');
+
+        
+
+        :root {
+
+            --v7-blue: #0a0e27;
+
+            --v7-neon: #00f0ff;
+
+            --v7-glow: rgba(0, 240, 255, 0.4);
+
+            --v7-purple: #6b2dff;
+
+        }
+
+        
+
+        * {
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+        }
+
+        
+
+        body {
+
+            font-family: 'Cairo', sans-serif;
+
+            background: var(--v7-blue);
+
+            color: white;
+
+            line-height: 1.6;
+
+            overflow-x: hidden;
+
+        }
+
+        
+
+        .container {
+
+            max-width: 1200px;
+
+            margin: 0 auto;
+
+            padding: 0 20px;
+
+        }
+
+        
+
+        /* Header */
+
+        header {
+
+            padding: 20px 0;
+
+            border-bottom: 1px solid rgba(0, 240, 255, 0.2);
+
+            position: relative;
+
+            z-index: 10;
+
+        }
+
+        
+
+        .nav {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+        }
+
+        
+
+        .logo {
+
+            font-size: 32px;
+
+            font-weight: 900;
+
+            color: var(--v7-neon);
+
+            text-shadow: 0 0 15px var(--v7-glow);
+
+            animation: glow 2s ease-in-out infinite alternate;
+
+        }
+
+        
+
+        @keyframes glow {
+
+            from { text-shadow: 0 0 10px var(--v7-glow); }
+
+            to { text-shadow: 0 0 25px var(--v7-neon), 0 0 35px var(--v7-neon); }
+
+        }
+
+        
+
+        .logo span {
+
+            font-size: 12px;
+
+            display: block;
+
+            font-weight: 400;
+
+            letter-spacing: 2px;
+
+        }
+
+        
+
+        .btn {
+
+            background: var(--v7-neon);
+
+            color: var(--v7-blue);
+
+            padding: 14px 32px;
+
+            border-radius: 50px;
+
+            text-decoration: none;
+
+            font-weight: 700;
+
+            box-shadow: 0 0 20px var(--v7-glow);
+
+            transition: 0.3s;
+
+            border: none;
+
+            cursor: pointer;
+
+            font-family: 'Cairo', sans-serif;
+
+            font-size: 16px;
+
+        }
+
+        
+
+        .btn:hover {
+
+            transform: translateY(-3px) scale(1.05);
+
+            box-shadow: 0 0 40px var(--v7-neon);
+
+        }
+
+        
+
+        /* Hero + Hologram Effect */
+
+        .hero {
+
+            padding: 60px 0 100px;
+
+            text-align: center;
+
+            position: relative;
+
+            min-height: 80vh;
+
+            display: flex;
+
+            align-items: center;
+
+        }
+
+        
+
+        .hero::before {
+
+            content: '';
+
+            position: absolute;
+
+            top: 50%;
+
+            left: 50%;
+
+            width: 600px;
+
+            height: 600px;
+
+            background: radial-gradient(circle, var(--v7-glow) 0%, transparent 70%);
+
+            transform: translate(-50%, -50%);
+
+            z-index: 0;
+
+            animation: pulse 4s ease-in-out infinite;
+
+        }
+
+        
+
+        @keyframes pulse {
+
+            0%, 100% { opacity: 0.3; transform: translate(-50%, -50%) scale(1); }
+
+            50% { opacity: 0.6; transform: translate(-50%, -50%) scale(1.1); }
+
+        }
+
+        
+
+        .hero-content {
+
+            position: relative;
+
+            z-index: 2;
+
+            width: 100%;
+
+        }
+
+        
+
+        h1 {
+
+            font-size: 52px;
+
+            font-weight: 900;
+
+            margin-bottom: 16px;
+
+            text-shadow: 0 0 20px var(--v7-glow);
+
+        }
+
+        
+
+        .hero p {
+
+            font-size: 22px;
+
+            margin-bottom: 32px;
+
+            opacity: 0.9;
+
+        }
+
+        
+
+        .hologram-stage {
+
+            position: relative;
+
+            width: 100%;
+
+            max-width: 450px;
+
+            height: 400px;
+
+            margin: 40px auto;
+
+        }
+
+        
+
+        .can-img {
+
+            width: 120px;
+
+            position: absolute;
+
+            bottom: 0;
+
+            left: 50%;
+
+            transform: translateX(-50%);
+
+            filter: drop-shadow(0 0 20px var(--v7-neon));
+
+            z-index: 3;
+
+        }
+
+        
+
+        .holo-prize {
+
+            position: absolute;
+
+            font-size: 14px;
+
+            font-weight: 700;
+
+            color: var(--v7-neon);
+
+            background: rgba(0, 240, 255, 0.1);
+
+            border: 1px solid var(--v7-neon);
+
+            padding: 8px 16px;
+
+            border-radius: 20px;
+
+            box-shadow: 0 0 15px var(--v7-glow);
+
+            opacity: 0;
+
+            animation: holoFloat 6s infinite;
+
+            backdrop-filter: blur(5px);
+
+        }
+
+        
+
+        .holo-prize:nth-child(2) { top: 20%; right: 10%; animation-delay: 0s; }
+
+        .holo-prize:nth-child(3) { top: 35%; left: 5%; animation-delay: 1s; }
+
+        .holo-prize:nth-child(4) { top: 10%; left: 20%; animation-delay: 2s; }
+
+        .holo-prize:nth-child(5) { top: 50%; right: 0%; animation-delay: 3s; }
+
+        .holo-prize:nth-child(6) { top: 25%; right: 25%; animation-delay: 4s; }
+
+        .holo-prize:nth-child(7) { top: 45%; left: 15%; animation-delay: 5s; }
+
+        
+
+        @keyframes holoFloat {
+
+            0% { opacity: 0; transform: translateY(20px) scale(0.8); }
+
+            10% { opacity: 1; transform: translateY(0) scale(1); }
+
+            80% { opacity: 1; transform: translateY(-30px) scale(1); }
+
+            100% { opacity: 0; transform: translateY(-50px) scale(0.8); }
+
+        }
+
+        
+
+        .scan-lines {
+
+            position: absolute;
+
+            top: 0;
+
+            left: 0;
+
+            width: 100%;
+
+            height: 100%;
+
+            background: repeating-linear-gradient(
+
+                0deg,
+
+                rgba(0, 240, 255, 0.03) 0px,
+
+                rgba(0, 240, 255, 0.03) 1px,
+
+                transparent 1px,
+
+                transparent 3px
+
+            );
+
+            pointer-events: none;
+
+            animation: scan 8s linear infinite;
+
+        }
+
+        
+
+        @keyframes scan {
+
+            0% { transform: translateY(0); }
+
+            100% { transform: translateY(20px); }
+
+        }
+
+        
+
+        /* Prizes */
+
+        .prizes {
+
+            padding: 80px 0;
+
+            background: rgba(0, 0, 0, 0.3);
+
+        }
+
+        
+
+        .section-title {
+
+            text-align: center;
+
+            font-size: 38px;
+
+            font-weight: 900;
+
+            margin-bottom: 50px;
+
+            color: var(--v7-neon);
+
+        }
+
+        
+
+        .prize-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+
+            gap: 24px;
+
+        }
+
+        
+
+        .prize-card {
+
+            background: rgba(0, 240, 255, 0.05);
+
+            border: 1px solid var(--v7-neon);
+
+            border-radius: 16px;
+
+            padding: 28px 16px;
+
+            text-align: center;
+
+            transition: 0.4s;
+
+            box-shadow: 0 0 15px rgba(0, 240, 255, 0.1);
+
+            cursor: pointer;
+
+        }
+
+        
+
+        .prize-card:hover {
+
+            transform: translateY(-10px) scale(1.03);
+
+            box-shadow: 0 0 35px var(--v7-glow);
+
+            background: rgba(0, 240, 255, 0.15);
+
+        }
+
+        
+
+        .prize-icon {
+
+            font-size: 44px;
+
+            margin-bottom: 12px;
+
+            filter: drop-shadow(0 0 10px var(--v7-glow));
+
+        }
+
+        
+
+        .prize-card h3 {
+
+            font-size: 18px;
+
+            color: var(--v7-neon);
+
+            margin-bottom: 4px;
+
+        }
+
+        
+
+        /* Steps */
+
+        .steps {
+
+            padding: 80px 0;
+
+        }
+
+        
+
+        .steps-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+            gap: 40px;
+
+            margin-top: 50px;
+
+        }
+
+        
+
+        .step {
+
+            text-align: center;
+
+        }
+
+        
+
+        .step-num {
+
+            width: 70px;
+
+            height: 70px;
+
+            background: var(--v7-neon);
+
+            color: var(--v7-blue);
+
+            border-radius: 50%;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 32px;
+
+            font-weight: 900;
+
+            margin: 0 auto 20px;
+
+            box-shadow: 0 0 30px var(--v7-glow);
+
+            animation: glow 2s ease-in-out infinite alternate;
+
+        }
+
+        
+
+        /* Social Proof */
+
+        .social-proof {
+
+            padding: 60px 0;
+
+            background: rgba(107, 45, 255, 0.1);
+
+            text-align: center;
+
+        }
+
+        
+
+        .counter {
+
+            font-size: 70px;
+
+            font-weight: 900;
+
+            color: var(--v7-neon);
+
+            text-shadow: 0 0 25px var(--v7-glow);
+
+        }
+
+        
+
+        .testimonials {
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+            gap: 24px;
+
+            margin-top: 40px;
+
+        }
+
+        
+
+        .testimonial {
+
+            background: rgba(0, 0, 0, 0.4);
+
+            padding: 24px;
+
+            border-radius: 12px;
+
+            border-right: 3px solid var(--v7-neon);
+
+        }
+
+        
+
+        /* Final CTA + Modal */
+
+        .final-cta {
+
+            padding: 100px 0;
+
+            text-align: center;
+
+        }
+
+        
+
+        .modal {
+
+            display: none;
+
+            position: fixed;
+
+            top: 0;
+
+            left: 0;
+
+            width: 100%;
+
+            height: 100%;
+
+            background: rgba(0, 0, 0, 0.8);
+
+            z-index: 100;
+
+            align-items: center;
+
+            justify-content: center;
+
+            backdrop-filter: blur(10px);
+
+        }
+
+        
+
+        .modal-content {
+
+            background: var(--v7-blue);
+
+            border: 2px solid var(--v7-neon);
+
+            padding: 40px;
+
+            border-radius: 20px;
+
+            text-align: center;
+
+            box-shadow: 0 0 50px var(--v7-glow);
+
+            animation: modalPop 0.4s ease-out;
+
+        }
+
+        
+
+        @keyframes modalPop {
+
+            from { transform: scale(0.7); opacity: 0; }
+
+            to { transform: scale(1); opacity: 1; }
+
+        }
+
+        
+
+        .won-prize {
+
+            font-size: 60px;
+
+            margin: 20px 0;
+
+        }
+
+        
+
+        footer {
+
+            padding: 40px 0;
+
+            text-align: center;
+
+            border-top: 1px solid rgba(0, 240, 255, 0.2);
+
+            font-size: 14px;
+
+            opacity: 0.7;
+
+        }
+
+        
+
+        @media (max-width: 768px) {
+
+            h1 { font-size: 36px; }
+
+            .section-title { font-size: 30px; }
+
+            .counter { font-size: 52px; }
+
+            .hologram-stage { height: 320px; }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="scan-lines"></div>
+
+    
+
+    <header>
+
+        <div class="container nav">
+
+            <div class="logo">V7<span>ENERGY VITAMINS PERFORMANCE</span></div>
+
+            <a href="#scan" class="btn">نزل الأبليكيشن</a>
+
+        </div>
+
+    </header>
+
+    <section class="hero">
+
+        <div class="container hero-content">
+
+            <h1>كل ما تسكان كتير.. V7 تكسبك أكتر بكتير</h1>
+
+            <p>كل كان V7 عليها QR كود يخليك تكسب جوائز حقيقية فوراً</p>
+
+            
+
+            <div class="hologram-stage">
+
+                <img src="https://i.imgur.com/8QfKZ9p.png" alt="V7 Can" class="can-img">
+
+                <div class="holo-prize">Gym Pass</div>
+
+                <div class="holo-prize">خصم 50%</div>
+
+                <div class="holo-prize">Movie Ticket</div>
+
+                <div class="holo-prize">رحلة أحلام</div>
+
+                <div class="holo-prize">رصيد مجاني</div>
+
+                <div class="holo-prize">اشتراك الجيميز</div>
+
+            </div>
+
+            
+
+            <button class="btn" onclick="simulateScan()">سكان وجرب حظك</button>
+
+            <p style="margin-top: 16px; font-size: 14px;">مفيش سحب، مفيش انتظار. المكسب بيظهر قدامك</p>
+
+        </div>
+
+    </section>
+
+    <section class="prizes">
+
+        <div class="container">
+
+            <h2 class="section-title">ممكن تكسب ايه مع كل سكان؟</h2>
+
+            <div class="prize-grid">
+
+                <div class="prize-card" onclick="showPrize('Gym Pass', '💪')">
+
+                    <div class="prize-icon">💪</div>
+
+                    <h3>Gym Pass</h3>
+
+                    <p>اشتراك جيم بريميوم</p>
+
+                </div>
+
+                <div class="prize-card" onclick="showPrize('خصم 50%', '🔥')">
+
+                    <div class="prize-icon">🔥</div>
+
+                    <h3>خصم 50%</h3>
+
+                    <p>على كل منتجات V7</p>
+
+                </div>
+
+                <div class="prize-card" onclick="showPrize('Movie Ticket', '🎬')">
+
+                    <div class="prize-icon">🎬</div>
+
+                    <h3>Movie Ticket</h3>
+
+                    <p>تذكرة سينما ليك وللي تحبه</p>
+
+                </div>
+
+                <div class="prize-card" onclick="showPrize('رحلة أحلام', '✈️')">
+
+                    <div class="prize-icon">✈️</div>
+
+                    <h3>رحلة أحلام</h3>
+
+                    <p>سفرية على حسابنا</p>
+
+                </div>
+
+                <div class="prize-card" onclick="showPrize('رصيد مجاني', '📱')">
+
+                    <div class="prize-icon">📱</div>
+
+                    <h3>رصيد مجاني</h3>
+
+                    <p>هيوصلك على موبايلك وقتي</p>
+
+                </div>
+
+                <div class="prize-card" onclick="showPrize('اشتراك الجيميز', '🎮')">
+
+                    <div class="prize-icon">🎮</div>
+
+                    <h3>اشتراك الجيميز</h3>
+
+                    <p>اكسس حصري للجيم</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="steps">
+
+        <div class="container">
+
+            <h2 class="section-title">3 خطوات وتكسب</h2>
+
+            <div class="steps-grid">
+
+                <div class="step">
+
+                    <div class="step-num">1</div>
+
+                    <h3>هات الكان</h3>
+
+                    <p>من أي سوبر ماركت أو كشك</p>
+
+                </div>
+
+                <div class="step">
+
+                    <div class="step-num">2</div>
+
+                    <h3>سكان الـQR</h3>
+
+                    <p>بكاميرا موبايلك أو من الأبليكيشن</p>
+
+                </div>
+
+                <div class="step">
+
+                    <div class="step-num">3</div>
+
+                    <h3>شوف جائزتك</h3>
+
+                    <p>بتطلع AR قدامك زي السحر</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="social-proof">
+
+        <div class="container">
+
+            <div class="counter" id="counter">82,340</div>
+
+            <p style="font-size: 20px; margin-bottom: 40px;">واحد كسب معانا الشهر ده</p>
+
+            <div class="testimonials">
+
+                <div class="testimonial">
+
+                    <p>"كنت فاكرها اشتغالة لحد ما كسبت اشتراك الجيم"</p>
+
+                    <p style="color: var(--v7-neon); margin-top: 12px;">- أحمد.م</p>
+
+                </div>
+
+                <div class="testimonial">
+
+                    <p>"كسبت رصيد 100 جنيه من تاني كان"</p>
+
+                    <p style="color: var(--v7-neon); margin-top: 12px;">- سارة.خ</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="final-cta" id="scan">
+
+        <div class="container">
+
+            <h2>الكان اللي في التلاجة كنز</h2>
+
+            <p style="font-size: 20px; margin-bottom: 20px;">مستني ايه؟ الجائزة الجاية ممكن تكون من نصيبك</p>
+
+            <button class="btn" onclick="simulateScan()">سكان دلوقتي</button>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <div class="container">
+
+            <p>V7 © 2026 | ENERGY VITAMINS PERFORMANCE | V-COLA</p>
+
+        </div>
+
+    </footer>
+
+    <!-- Prize Modal -->
+
+    <div class="modal" id="prizeModal">
+
+        <div class="modal-content">
+
+            <h2 style="color: var(--v7-neon);">مبروك كسبت!</h2>
+
+            <div class="won-prize" id="wonPrizeIcon">🎉</div>
+
+            <h3 id="wonPrizeName">Gym Pass</h3>
+
+            <p style="margin: 20px 0;">جائزتك هتوصلك في رسالة SMS خلال دقائق</p>
+
+            <button class="btn" onclick="closeModal()">تمام</button>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        const prizes = [
+
+            {name: 'Gym Pass', icon: '💪'},
+
+            {name: 'خصم 50%', icon: '🔥'},
+
+            {name: 'Movie Ticket', icon: '🎬'},
+
+            {name: 'رحلة أحلام', icon: '✈️'},
+
+            {name: 'رصيد مجاني', icon: '📱'},
+
+            {name: 'اشتراك الجيميز', icon: '🎮'}
+
+        ];
+
+        function simulateScan() {
+
+            const randomPrize = prizes[Math.floor(Math.random() * prizes.length)];
+
+            showPrize(randomPrize.name, randomPrize.icon);
+
+            updateCounter();
+
+        }
+
+        function showPrize(name, icon) {
+
+            document.getElementById('wonPrizeName').textContent = name;
+
+            document.getElementById('wonPrizeIcon').textContent = icon;
+
+            document.getElementById('prizeModal').style.display = 'flex';
+
+        }
+
+        function closeModal() {
+
+            document.getElementById('prizeModal').style.display = 'none';
+
+        }
+
+        function updateCounter() {
+
+            const counter = document.getElementById('counter');
+
+            let current = parseInt(counter.textContent.replace(',', ''));
+
+            current += Math.floor(Math.random() * 3) + 1;
+
+            counter.textContent = current.toLocaleString('en-US');
+
+        }
+
+        // Auto increment counter
+
+        setInterval(() => {
+
+            updateCounter();
+
+        }, 5000);
+
+        // Close modal on outside click
+
+        document.getElementById('prizeModal').onclick = function(e) {
+
+            if (e.target === this) closeModal();
+
+        }
+
+    </script>
+
+</body>
+
+</html>

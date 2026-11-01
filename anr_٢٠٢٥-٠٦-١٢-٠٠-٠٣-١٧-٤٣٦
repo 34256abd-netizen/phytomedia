@@ -1,0 +1,956 @@
+
+----- pid 20565 at 2025-06-12 00:03:18 -----
+Cmd line: com.etisalat
+Build fingerprint: 'samsung/gtaxlltexx/gtaxllte:8.1.0/M1AJQ/T585XXU7CUH1:user/release-keys'
+ABI: 'arm'
+Build type: optimized
+Zygote loaded classes=8791 post zygote classes=627
+Intern table: 56274 strong; 144 weak
+JNI: CheckJNI is off; globals=528 (plus 56 weak)
+Libraries: /data/app/com.etisalat-0otzVIbsxA7_G3IppQlDkg==/split_config.armeabi_v7a.apk!/lib/armeabi-v7a/libd4a7.so /system/lib/libandroid.so /system/lib/libandroid_runtime.so /system/lib/libcompiler_rt.so /system/lib/libjavacrypto.so /system/lib/libjnigraphics.so /system/lib/libmedia_jni.so /system/lib/libsoundpool.so /system/lib/libwebviewchromium_loader.so libjavacore.so libopenjdk.so (11)
+Heap: 0% free, 8MB/8MB; 50138 objects
+Dumping cumulative Gc timings
+Start Dumping histograms for 13 iterations for concurrent copying
+ThreadListFlip:	Sum: 1.028s 99% C.I. 0.083ms-901.759ms Avg: 79.130ms Max: 947.850ms
+ScanImmuneSpaces:	Sum: 777.673ms 99% C.I. 41.610ms-147.008ms Avg: 59.821ms Max: 151.089ms
+ProcessMarkStack:	Sum: 715.786ms 99% C.I. 7.776ms-429.439ms Avg: 55.060ms Max: 452.670ms
+FlipOtherThreads:	Sum: 169.806ms 99% C.I. 0.156ms-153.008ms Avg: 13.062ms Max: 160.118ms
+VisitConcurrentRoots:	Sum: 157.486ms 99% C.I. 4.544ms-67.644ms Avg: 12.114ms Max: 69.665ms
+MarkingPhase:	Sum: 134.325ms 99% C.I. 0.026ms-67.480ms Avg: 10.332ms Max: 67.674ms
+GrayAllDirtyImmuneObjects:	Sum: 21.659ms 99% C.I. 0.779ms-8.303ms Avg: 1.666ms Max: 8.674ms
+ForwardSoftReferences:	Sum: 15.066ms 99% C.I. 0.810ms-1.800ms Avg: 1.158ms Max: 1.800ms
+ClearFromSpace:	Sum: 11.412ms 99% C.I. 224us-2454us Avg: 877.846us Max: 2454us
+InitializePhase:	Sum: 4.103ms 99% C.I. 292us-347us Avg: 315.615us Max: 347us
+RecordFree:	Sum: 4.005ms 99% C.I. 176us-1068us Avg: 308.076us Max: 1068us
+ReclaimPhase:	Sum: 3.215ms 99% C.I. 15us-2671.249us Avg: 247.307us Max: 2840us
+FlipThreadRoots:	Sum: 3.052ms 99% C.I. 5us-2630.999us Avg: 234.769us Max: 2764us
+SweepLargeObjects:	Sum: 2.985ms 99% C.I. 44us-1291.500us Avg: 229.615us Max: 1336us
+SweepSystemWeaks:	Sum: 2.559ms 99% C.I. 141us-346us Avg: 196.846us Max: 346us
+ResumeRunnableThreads:	Sum: 2.519ms 99% C.I. 9us-2107us Avg: 193.769us Max: 2235us
+VisitNonThreadRoots:	Sum: 2.481ms 99% C.I. 153us-480.499us Avg: 190.846us Max: 490us
+ProcessReferences:	Sum: 1.716ms 99% C.I. 4us-381us Avg: 66us Max: 381us
+(Paused)GrayAllNewlyDirtyImmuneObjects:	Sum: 1.083ms 99% C.I. 71us-94us Avg: 83.307us Max: 94us
+MarkZygoteLargeObjects:	Sum: 1.061ms 99% C.I. 76us-91us Avg: 81.615us Max: 91us
+EnqueueFinalizerReferences:	Sum: 1.042ms 99% C.I. 32us-213us Avg: 80.153us Max: 213us
+EmptyRBMarkBitStack:	Sum: 918us 99% C.I. 21us-198.375us Avg: 70.615us Max: 199us
+(Paused)ClearCards:	Sum: 564us 99% C.I. 1us-49.877us Avg: 1.446us Max: 63us
+MarkStackAsLive:	Sum: 383us 99% C.I. 15us-63us Avg: 29.461us Max: 63us
+UnBindBitmaps:	Sum: 314us 99% C.I. 2us-268us Avg: 24.153us Max: 268us
+SwapBitmaps:	Sum: 285us 99% C.I. 10us-63us Avg: 21.923us Max: 63us
+ClearRegionSpaceCards:	Sum: 242us 99% C.I. 9us-88us Avg: 18.615us Max: 88us
+Sweep:	Sum: 144us 99% C.I. 7us-17us Avg: 11.076us Max: 17us
+SweepAllocSpace:	Sum: 119us 99% C.I. 3us-16us Avg: 9.153us Max: 16us
+ResumeOtherThreads:	Sum: 104us 99% C.I. 2us-27us Avg: 8us Max: 27us
+(Paused)FlipCallback:	Sum: 102us 99% C.I. 6us-11us Avg: 7.846us Max: 11us
+(Paused)SetFromSpace:	Sum: 79us 99% C.I. 4us-13us Avg: 6.076us Max: 13us
+Done Dumping histograms
+concurrent copying paused:	Sum: 1.030s 99% C.I. 0.189ms-901.759ms Avg: 79.267ms Max: 948.052ms
+concurrent copying total time: 3.064s mean time: 235.767ms
+concurrent copying freed: 400707 objects with total size 19MB
+concurrent copying throughput: 130779/s / 6MB/s
+Cumulative bytes moved 8753384
+Cumulative objects moved 166982
+Total time spent in GC: 3.064s
+Mean GC size throughput: 5MB/s
+Mean GC object throughput: 130723 objects/s
+Total number of allocations 450800
+Total bytes allocated 21MB
+Total bytes freed 17MB
+Free memory 1169KB
+Free memory until GC 1169KB
+Free memory until OOME 508MB
+Total memory 4MB
+Max memory 512MB
+Zygote space size 688KB
+Total mutator paused time: 1.030s
+Total time waiting for GC to complete: 809.948ms
+Total GC count: 13
+Total GC time: 3.064s
+Total blocking GC count: 2
+Total blocking GC time: 2.456s
+Histogram of GC count per 10000 ms: 7:1
+Histogram of blocking GC count per 10000 ms: 0:1
+Registered native bytes allocated: 104470
+/system/framework/oat/arm/android.test.mock.odex: speed
+/system/framework/oat/arm/android.test.runner.odex: speed
+/data/app/com.etisalat-0otzVIbsxA7_G3IppQlDkg==/oat/arm/base.odex: speed-profile
+/data/user_de/0/com.google.android.gms/app_chimera/m/000004ac/oat/arm/DynamiteLoader.uncompressed.odex: speed
+/data/user_de/0/com.google.android.gms/app_chimera/m/000004b1/oat/arm/MeasurementDynamite.uncompressed.odex: speed-profile
+Current JIT code cache size: 101KB
+Current JIT data cache size: 69KB
+Current JIT capacity: 512KB
+Current number of JIT code cache entries: 7
+Total number of JIT compilations: 13
+Total number of JIT compilations for on stack replacement: 3
+Total number of JIT code cache collections: 4
+Memory used for stack maps: Avg: 6KB Max: 36KB Min: 44B
+Memory used for compiled code: Avg: 9KB Max: 62KB Min: 132B
+Memory used for profiling info: Avg: 927B Max: 7KB Min: 16B
+Start Dumping histograms for 19 iterations for JIT timings
+Compiling:	Sum: 2.027s 99% C.I. 0.788ms-617.600ms Avg: 135.197ms Max: 623.120ms
+TrimMaps:	Sum: 12.802ms 99% C.I. 13us-4608.750us Avg: 853.466us Max: 4633us
+Code cache collection:	Sum: 2.133ms 99% C.I. 430us-601us Avg: 533.250us Max: 601us
+Done Dumping histograms
+Memory used for compilation: Avg: 1694KB Max: 10MB Min: 39KB
+ProfileSaver total_bytes_written=0
+ProfileSaver total_number_of_writes=0
+ProfileSaver total_number_of_code_cache_queries=0
+ProfileSaver total_number_of_skipped_writes=0
+ProfileSaver total_number_of_failed_writes=0
+ProfileSaver total_ms_of_sleep=5000
+ProfileSaver total_ms_of_work=0
+ProfileSaver max_number_profile_entries_cached=0
+ProfileSaver total_number_of_hot_spikes=0
+ProfileSaver total_number_of_wake_ups=0
+
+suspend all histogram:	Sum: 1.085s 99% C.I. 0.093ms-777.748ms Avg: 27.842ms Max: 947.732ms
+DALVIK THREADS (40):
+"Signal Catcher" daemon prio=5 tid=3 Runnable
+  | group="system" sCount=0 dsCount=0 flags=0 obj=0x13140088 self=0xe5c7bc00
+  | sysTid=20572 nice=0 cgrp=default sched=0/0 handle=0xdcefe970
+  | state=R schedstat=( 0 0 0 ) utm=3 stm=2 core=0 HZ=100
+  | stack=0xdce04000-0xdce06000 stackSize=1006KB
+  | held mutexes= "mutator lock"(shared held)
+  native: #00 pc 002eedcf  /system/lib/libart.so (art::DumpNativeStack(std::__1::basic_ostream<char, std::__1::char_traits<char>>&, int, BacktraceMap*, char const*, art::ArtMethod*, void*)+130)
+  native: #01 pc 003844db  /system/lib/libart.so (art::Thread::DumpStack(std::__1::basic_ostream<char, std::__1::char_traits<char>>&, bool, BacktraceMap*, bool) const+206)
+  native: #02 pc 00380a57  /system/lib/libart.so (art::Thread::Dump(std::__1::basic_ostream<char, std::__1::char_traits<char>>&, bool, BacktraceMap*, bool) const+34)
+  native: #03 pc 00398f8b  /system/lib/libart.so (art::DumpCheckpoint::Run(art::Thread*)+718)
+  native: #04 pc 00392491  /system/lib/libart.so (art::ThreadList::RunCheckpoint(art::Closure*, art::Closure*)+324)
+  native: #05 pc 00391f83  /system/lib/libart.so (art::ThreadList::Dump(std::__1::basic_ostream<char, std::__1::char_traits<char>>&, bool)+546)
+  native: #06 pc 00391c93  /system/lib/libart.so (art::ThreadList::DumpForSigQuit(std::__1::basic_ostream<char, std::__1::char_traits<char>>&)+642)
+  native: #07 pc 0036eedb  /system/lib/libart.so (art::Runtime::DumpForSigQuit(std::__1::basic_ostream<char, std::__1::char_traits<char>>&)+122)
+  native: #08 pc 00375ce5  /system/lib/libart.so (art::SignalCatcher::HandleSigQuit()+712)
+  native: #09 pc 00374e75  /system/lib/libart.so (art::SignalCatcher::Run(void*)+256)
+  native: #10 pc 00048811  /system/lib/libc.so (__pthread_start(void*)+24)
+  native: #11 pc 0001b369  /system/lib/libc.so (__start_thread+32)
+  (no managed stack frames)
+
+"main" prio=5 tid=1 Native
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x73b45638 self=0xe5c7b000
+  | sysTid=20565 nice=0 cgrp=default sched=0/0 handle=0xe9f4f4b8
+  | state=S schedstat=( 0 0 0 ) utm=268 stm=113 core=6 HZ=100
+  | stack=0xff176000-0xff178000 stackSize=8MB
+  | held mutexes=
+  kernel: (couldn't read /proc/self/task/20565/stack)
+  native: #00 pc 00018e50  /system/lib/libc.so (syscall+28)
+  native: #01 pc 000b7d99  /system/lib/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+88)
+  native: #02 pc 000b119b  /system/lib/libart.so (art::ArtMethod::IsAnnotatedWith(_jclass*, unsigned int, bool)+346)
+  native: #03 pc 003eca59  /system/lib/libart.so (art::GenericJniMethodEnd(art::Thread*, unsigned int, jvalue, unsigned long long, art::ArtMethod*, art::HandleScope*)+28)
+  native: #04 pc 003f1011  /system/lib/libart.so (artQuickGenericJniEndTrampoline+32)
+  native: #05 pc 00411e85  /system/lib/libart.so (art_quick_generic_jni_trampoline+52)
+  native: #06 pc 0040d975  /system/lib/libart.so (art_quick_invoke_stub_internal+68)
+  native: #07 pc 00412beb  /system/lib/libart.so (art_quick_invoke_static_stub+226)
+  native: #08 pc 000b065d  /system/lib/libart.so (art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)+180)
+  native: #09 pc 00360589  /system/lib/libart.so (art::InvokeWithArgArray(art::ScopedObjectAccessAlreadyRunnable const&, art::ArtMethod*, art::ArgArray*, art::JValue*, char const*)+52)
+  native: #10 pc 003619d7  /system/lib/libart.so (art::InvokeMethod(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, _jobject*, _jobject*, unsigned int)+946)
+  native: #11 pc 0030dbf5  /system/lib/libart.so (art::Method_invoke(_JNIEnv*, _jobject*, _jobject*, _jobject*)+40)
+  native: #12 pc 0006da47  /system/framework/arm/boot.oat (???)
+  at o.getCamera.a(Native method)
+  at java.lang.reflect.Method.invoke(Native method)
+  at io.reactivex.internal.operators.single.SingleDelayWithObservable$OtherSubscriber.AppCollectorConstants$365b6e7e(:65354)
+  at dev.fluttercommunity.plus.share.ShareFileProvider.onCreate(:1523)
+  at android.content.ContentProvider.attachInfo(ContentProvider.java:1925)
+  at android.content.ContentProvider.attachInfo(ContentProvider.java:1900)
+  at androidx.core.content.FileProvider.attachInfo(:423)
+  at android.app.ActivityThread.installProvider(ActivityThread.java:6618)
+  at android.app.ActivityThread.installContentProviders(ActivityThread.java:6173)
+  at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6079)
+  at android.app.ActivityThread.-wrap1(ActivityThread.java:-1)
+  at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1791)
+  at android.os.Handler.dispatchMessage(Handler.java:106)
+  at android.os.Looper.loop(Looper.java:164)
+  at android.app.ActivityThread.main(ActivityThread.java:7000)
+  at java.lang.reflect.Method.invoke(Native method)
+  at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:441)
+  at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1408)
+
+"Jit thread pool worker thread 0" daemon prio=5 tid=2 Native
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x13140000 self=0xdb227600
+  | sysTid=20571 nice=9 cgrp=default sched=0/0 handle=0xdcfff970
+  | state=S schedstat=( 0 0 0 ) utm=103 stm=16 core=7 HZ=100
+  | stack=0xdcf01000-0xdcf03000 stackSize=1022KB
+  | held mutexes=
+  kernel: (couldn't read /proc/self/task/20571/stack)
+  native: #00 pc 00018e50  /system/lib/libc.so (syscall+28)
+  native: #01 pc 000b7d99  /system/lib/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+88)
+  native: #02 pc 0039ad31  /system/lib/libart.so (art::ThreadPool::GetTask(art::Thread*)+172)
+  native: #03 pc 0039a6a7  /system/lib/libart.so (art::ThreadPoolWorker::Run()+62)
+  native: #04 pc 0039a2bd  /system/lib/libart.so (art::ThreadPoolWorker::Callback(void*)+92)
+  native: #05 pc 00048811  /system/lib/libc.so (__pthread_start(void*)+24)
+  native: #06 pc 0001b369  /system/lib/libc.so (__start_thread+32)
+  (no managed stack frames)
+
+"ReferenceQueueDaemon" daemon prio=5 tid=4 Waiting
+  | group="system" sCount=1 dsCount=0 flags=1 obj=0x13140110 self=0xe5c7ce00
+  | sysTid=20573 nice=4 cgrp=default sched=0/0 handle=0xdb401970
+  | state=S schedstat=( 0 0 0 ) utm=0 stm=0 core=4 HZ=100
+  | stack=0xdb2ff000-0xdb301000 stackSize=1038KB
+  | held mutexes=
+  at java.lang.Object.wait(Native method)
+  - waiting on <0x0ecc37a8> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+  at java.lang.Daemons$ReferenceQueueDaemon.runInternal(Daemons.java:178)
+  - locked <0x0ecc37a8> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+  at java.lang.Daemons$Daemon.run(Daemons.java:103)
+  at java.lang.Thread.run(Thread.java:764)
+
+"FinalizerDaemon" daemon prio=5 tid=5 Waiting
+  | group="system" sCount=1 dsCount=0 flags=1 obj=0x13140198 self=0xe5b90000
+  | sysTid=20574 nice=4 cgrp=default sched=0/0 handle=0xc492a970
+  | state=S schedstat=( 0 0 0 ) utm=0 stm=0 core=4 HZ=100
+  | stack=0xc4828000-0xc482a000 stackSize=1038KB
+  | held mutexes=
+  at java.lang.Object.wait(Native method)
+  - waiting on <0x09d912c1> (a java.lang.Object)
+  at java.lang.Object.wait(Object.java:422)
+  at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:188)
+  - locked <0x09d912c1> (a java.lang.Object)
+  at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:209)
+  at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:232)
+  at java.lang.Daemons$Daemon.run(Daemons.java:103)
+  at java.lang.Thread.run(Thread.java:764)
+
+"FinalizerWatchdogDaemon" daemon prio=5 tid=6 Sleeping
+  | group="system" sCount=1 dsCount=0 flags=1 obj=0x131402a8 self=0xe5b92400
+  | sysTid=20576 nice=4 cgrp=default sched=0/0 handle=0xc4825970
+  | state=S schedstat=( 0 0 0 ) utm=0 stm=0 core=0 HZ=100
+  | stack=0xc4723000-0xc4725000 stackSize=1038KB
+  | held mutexes=
+  at java.lang.Thread.sleep(Native method)
+  - sleeping on <0x0769fa66> (a java.lang.Object)
+  at java.lang.Thread.sleep(Thread.java:373)
+  - locked <0x0769fa66> (a java.lang.Object)
+  at java.lang.Thread.sleep(Thread.java:314)
+  at java.lang.Daemons$FinalizerWatchdogDaemon.sleepFor(Daemons.java:342)
+  at java.lang.Daemons$FinalizerWatchdogDaemon.waitForFinalization(Daemons.java:364)
+  at java.lang.Daemons$FinalizerWatchdogDaemon.runInternal(Daemons.java:281)
+  at java.lang.Daemons$Daemon.run(Daemons.java:103)
+  at java.lang.Thread.run(Thread.java:764)
+
+"Measurement Worker" prio=5 tid=41 Runnable
+  | group="main" sCount=0 dsCount=0 flags=2 obj=0x12d801a0 self=0xda566a00
+  | sysTid=21093 nice=10 cgrp=default sched=0/0 handle=0xb7d7f970
+  | state=R schedstat=( 0 0 0 ) utm=0 stm=0 core=4 HZ=100
+  | stack=0xb7c7d000-0xb7c7f000 stackSize=1038KB
+  | held mutexes= "mutator lock"(shared held)
+  at java.lang.ClassNotFoundException.<init>(ClassNotFoundException.java:95)
+  at java.lang.Class.classForName(Native method)
+  at java.lang.BootClassLoader.findClass(ClassLoader.java:1355)
+  at java.lang.BootClassLoader.loadClass(ClassLoader.java:1415)
+  at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+  at m2.ap.loadClass(:com.google.android.gms.dynamite_dynamiteloader@251833000@25.18.33 (040300-0):16)
+  at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+  at m7.ot.aw(:com.google.android.gms.dynamite_measurementdynamite@251833000@25.18.33 (040300-0):39)
+  at m7.pe.q(:com.google.android.gms.dynamite_measurementdynamite@251833000@25.18.33 (040300-0):5)
+  at m7.pb.run(:com.google.android.gms.dynamite_measurementdynamite@251833000@25.18.33 (040300-0):74)
+  at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:457)
+  at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  at m7.oy.run(:com.google.android.gms.dynamite_measurementdynamite@251833000@25.18.33 (040300-0):48)
+
+"HeapTaskDaemon" daemon prio=5 tid=7 WaitingForCheckPointsToRun
+  | group="system" sCount=1 dsCount=0 flags=1 obj=0x131474a8 self=0xe5b92a00
+  | sysTid=20577 nice=4 cgrp=default sched=0/0 handle=0xc4720970
+  | state=S schedstat=( 0 0 0 ) utm=91 stm=6 core=7 HZ=100
+  | stack=0xc461e000-0xc4620000 stackSize=1038KB
+  | held mutexes=
+  kernel: (couldn't read /proc/self/task/20577/stack)
+  native: #00 pc 00018e50  /system/lib/libc.so (syscall+28)
+  native: #01 pc 000b7d99  /system/lib/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+88)
+  native: #02 pc 000b2e4f  /system/lib/libart.so (art::Barrier::Increment(art::Thread*, int)+48)
+  native: #03 pc 0017c7a3  /system/lib/libart.so (art::gc::collector::ConcurrentCopying::RevokeThreadLocalMarkStacks(bool, art::Closure*)+538)
+  native: #04 pc 0017d13d  /system/lib/libart.so (art::gc::collector::ConcurrentCopying::ProcessThreadLocalMarkStacks(bool, art::Closure*)+20)
+  native: #05 pc 0017ce4b  /system/lib/libart.so (art::gc::collector::ConcurrentCopying::ProcessMarkStackOnce()+366)
+  native: #06 pc 0017ccc9  /system/lib/libart.so (art::gc::collector::ConcurrentCopying::ProcessMarkStack()+8)
+  native: #07 pc 001780ed  /system/lib/libart.so (art::gc::collector::ConcurrentCopying::MarkingPhase()+456)
+  native: #08 pc 00177015  /system/lib/libart.so (art::gc::collector::ConcurrentCopying::RunPhases()+996)
+  native: #09 pc 00186bcd  /system/lib/libart.so (art::gc::collector::GarbageCollector::Run(art::gc::GcCause, bool)+260)
+  native: #10 pc 001a108f  /system/lib/libart.so (art::gc::Heap::CollectGarbageInternal(art::gc::collector::GcType, art::gc::GcCause, bool)+2390)
+  native: #11 pc 001af17f  /system/lib/libart.so (art::gc::Heap::ConcurrentGC(art::Thread*, art::gc::GcCause, bool)+70)
+  native: #12 pc 001b3d05  /system/lib/libart.so (art::gc::Heap::ConcurrentGCTask::Run(art::Thread*)+20)
+  native: #13 pc 001ceca3  /system/lib/libart.so (art::gc::TaskProcessor::RunAllTasks(art::Thread*)+30)
+  native: #14 pc 00193fe3  /system/framework/arm/boot-core-libart.oat (Java_dalvik_system_VMRuntime_runHeapTasks__+74)
+  at dalvik.system.VMRuntime.runHeapTasks(Native method)
+  at java.lang.Daemons$HeapTaskDaemon.runInternal(Daemons.java:461)
+  at java.lang.Daemons$Daemon.run(Daemons.java:103)
+  at java.lang.Thread.run(Thread.java:764)
+
+"Binder:20565_1" prio=5 tid=8 Native
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x131403d0 self=0xdd009200
+  | sysTid=20579 nice=0 cgrp=default sched=0/0 handle=0xc451d970
+  | state=S schedstat=( 0 0 0 ) utm=0 stm=0 core=0 HZ=100
+  | stack=0xc4423000-0xc4425000 stackSize=1006KB
+  | held mutexes=
+  kernel: (couldn't read /proc/self/task/20579/stack)
+  native: #00 pc 00049ff8  /system/lib/libc.so (__ioctl+8)
+  native: #01 pc 0001e215  /system/lib/libc.so (ioctl+40)
+  native: #02 pc 00042839  /system/lib/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+204)
+  native: #03 pc 00042949  /system/lib/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+8)
+  native: #04 pc 00042ea3  /system/lib/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+38)
+  native: #05 pc 000583cd  /system/lib/libbinder.so (???)
+  native: #06 pc 0000d235  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+148)
+  native: #07 pc 00075119  /system/lib/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+80)
+  native: #08 pc 00048811  /system/lib/libc.so (__pthread_start(void*)+24)
+  native: #09 pc 0001b369  /system/lib/libc.so (__start_thread+32)
+  (no managed stack frames)
+
+"Binder:20565_2" prio=5 tid=9 Native
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x13140458 self=0xdb1cca00
+  | sysTid=20580 nice=0 cgrp=default sched=0/0 handle=0xc4420970
+  | state=S schedstat=( 0 0 0 ) utm=0 stm=0 core=3 HZ=100
+  | stack=0xc4326000-0xc4328000 stackSize=1006KB
+  | held mutexes=
+  kernel: (couldn't read /proc/self/task/20580/stack)
+  native: #00 pc 00049ff8  /system/lib/libc.so (__ioctl+8)
+  native: #01 pc 0001e215  /system/lib/libc.so (ioctl+40)
+  native: #02 pc 00042839  /system/lib/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+204)
+  native: #03 pc 00042949  /system/lib/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+8)
+  native: #04 pc 00042ea3  /system/lib/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+38)
+  native: #05 pc 000583cd  /system/lib/libbinder.so (???)
+  native: #06 pc 0000d235  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+148)
+  native: #07 pc 00075119  /system/lib/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+80)
+  native: #08 pc 00048811  /system/lib/libc.so (__pthread_start(void*)+24)
+  native: #09 pc 0001b369  /system/lib/libc.so (__start_thread+32)
+  (no managed stack frames)
+
+"Binder:20565_3" prio=5 tid=10 Native
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x13140518 self=0xdb225e00
+  | sysTid=20582 nice=0 cgrp=default sched=0/0 handle=0xc4323970
+  | state=S schedstat=( 0 0 0 ) utm=0 stm=0 core=2 HZ=100
+  | stack=0xc4229000-0xc422b000 stackSize=1006KB
+  | held mutexes=
+  kernel: (couldn't read /proc/self/task/20582/stack)
+  native: #00 pc 00049ff8  /system/lib/libc.so (__ioctl+8)
+  native: #01 pc 0001e215  /system/lib/libc.so (ioctl+40)
+  native: #02 pc 00042839  /system/lib/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+204)
+  native: #03 pc 00042949  /system/lib/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+8)
+  native: #04 pc 00042ea3  /system/lib/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+38)
+  native: #05 pc 000583cd  /system/lib/libbinder.so (???)
+  native: #06 pc 0000d235  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+148)
+  native: #07 pc 00075119  /system/lib/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+80)
+  native: #08 pc 00048811  /system/lib/libc.so (__pthread_start(void*)+24)
+  native: #09 pc 0001b369  /system/lib/libc.so (__start_thread+32)
+  (no managed stack frames)
+
+"Profile Saver" daemon prio=5 tid=11 Native
+  | group="system" sCount=1 dsCount=0 flags=1 obj=0x131405a0 self=0xe5b93600
+  | sysTid=20591 nice=9 cgrp=default sched=0/0 handle=0xbc146970
+  | state=S schedstat=( 0 0 0 ) utm=0 stm=0 core=2 HZ=100
+  | stack=0xbc04c000-0xbc04e000 stackSize=1006KB
+  | held mutexes=
+  kernel: (couldn't read /proc/self/task/20591/stack)
+  native: #00 pc 00018e50  /system/lib/libc.so (syscall+28)
+  native: #01 pc 000b7d99  /system/lib/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+88)
+  native: #02 pc 0027add9  /system/lib/libart.so (art::ProfileSaver::Run()+344)
+  native: #03 pc 0027d0f3  /system/lib/libart.so (art::ProfileSaver::RunProfileSaverThread(void*)+50)
+  native: #04 pc 00048811  /system/lib/libc.so (__pthread_start(void*)+24)
+  native: #05 pc 0001b369  /system/lib/libc.so (__start_thread+32)
+  (no managed stack frames)
+
+"Thread-5" prio=5 tid=12 Waiting
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x13140628 self=0xdb196e00
+  | sysTid=20684 nice=0 cgrp=default sched=0/0 handle=0xbb646970
+  | state=S schedstat=( 0 0 0 ) utm=41 stm=0 core=3 HZ=100
+  | stack=0xbb544000-0xbb546000 stackSize=1038KB
+  | held mutexes=
+  at java.lang.Object.wait(Native method)
+  - waiting on <0x034ee1a7> (a java.lang.Object)
+  at java.lang.Thread.parkFor$(Thread.java:2137)
+  - locked <0x034ee1a7> (a java.lang.Object)
+  at sun.misc.Unsafe.park(Unsafe.java:358)
+  at java.util.concurrent.locks.LockSupport.park(LockSupport.java:190)
+  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2059)
+  at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+  at o.Camera2CameraImplExternalSyntheticLambda9.run(:32)
+  at java.lang.Thread.run(Thread.java:764)
+
+"Thread-6" prio=5 tid=13 Sleeping
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x13142aa0 self=0xdb197400
+  | sysTid=20685 nice=0 cgrp=default sched=0/0 handle=0xbb541970
+  | state=S schedstat=( 0 0 0 ) utm=0 stm=0 core=5 HZ=100
+  | stack=0xbb43f000-0xbb441000 stackSize=1038KB
+  | held mutexes=
+  at java.lang.Thread.sleep(Native method)
+  - sleeping on <0x0f812654> (a java.lang.Object)
+  at java.lang.Thread.sleep(Thread.java:373)
+  - locked <0x0f812654> (a java.lang.Object)
+  at java.lang.Thread.sleep(Thread.java:314)
+  at o.Camera2CameraImplExternalSyntheticLambda12.run(:67)
+  at java.lang.Thread.run(Thread.java:764)
+
+"OkHttp ConnectionPool" daemon prio=5 tid=14 TimedWaiting
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x13144e48 self=0xdd03f000
+  | sysTid=20709 nice=0 cgrp=default sched=0/0 handle=0xbb307970
+  | state=S schedstat=( 0 0 0 ) utm=0 stm=0 core=6 HZ=100
+  | stack=0xbb205000-0xbb207000 stackSize=1038KB
+  | held mutexes=
+  at java.lang.Object.wait(Native method)
+  - waiting on <0x0ca319fd> (a com.android.okhttp.ConnectionPool)
+  at com.android.okhttp.ConnectionPool$1.run(ConnectionPool.java:101)
+  - locked <0x0ca319fd> (a com.android.okhttp.ConnectionPool)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1162)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+  at java.lang.Thread.run(Thread.java:764)
+
+"SplitCompatBackgroundThread" prio=5 tid=16 TimedWaiting
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x13145528 self=0xdb162200
+  | sysTid=20822 nice=0 cgrp=default sched=0/0 handle=0xbab47970
+  | state=S schedstat=( 0 0 0 ) utm=0 stm=0 core=3 HZ=100
+  | stack=0xbaa45000-0xbaa47000 stackSize=1038KB
+  | held mutexes=
+  at java.lang.Object.wait(Native method)
+  - waiting on <0x0a0b56f2> (a java.lang.Object)
+  at java.lang.Thread.parkFor$(Thread.java:2137)
+  - locked <0x0a0b56f2> (a java.lang.Object)
+  at sun.misc.Unsafe.park(Unsafe.java:358)
+  at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:230)
+  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2101)
+  at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+  at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1086)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1147)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+  at java.lang.Thread.run(Thread.java:764)
+
+"ScionFrontendApi" prio=5 tid=17 TimedWaiting
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x13145948 self=0xda561600
+  | sysTid=20879 nice=0 cgrp=default sched=0/0 handle=0xba945970
+  | state=S schedstat=( 0 0 0 ) utm=6 stm=5 core=5 HZ=100
+  | stack=0xba843000-0xba845000 stackSize=1038KB
+  | held mutexes=
+  at java.lang.Object.wait(Native method)
+  - waiting on <0x0c7df143> (a java.lang.Object)
+  at java.lang.Thread.parkFor$(Thread.java:2137)
+  - locked <0x0c7df143> (a java.lang.Object)
+  at sun.misc.Unsafe.park(Unsafe.java:358)
+  at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:230)
+  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2101)
+  at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+  at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1086)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1147)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+  at java.lang.Thread.run(Thread.java:764)
+
+"pool-7-thread-1" prio=5 tid=18 Waiting
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x13146610 self=0xda563a00
+  | sysTid=20880 nice=0 cgrp=default sched=0/0 handle=0xba77f970
+  | state=S schedstat=( 0 0 0 ) utm=0 stm=1 core=1 HZ=100
+  | stack=0xba67d000-0xba67f000 stackSize=1038KB
+  | held mutexes=
+  at java.lang.Object.wait(Native method)
+  - waiting on <0x0df453c0> (a java.lang.Object)
+  at java.lang.Thread.parkFor$(Thread.java:2137)
+  - locked <0x0df453c0> (a java.lang.Object)
+  at sun.misc.Unsafe.park(Unsafe.java:358)
+  at java.util.concurrent.locks.LockSupport.park(LockSupport.java:190)
+  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2059)
+  at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+  at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1087)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1147)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+  at java.lang.Thread.run(Thread.java:764)
+
+"RxSchedulerPurge-1" daemon prio=5 tid=19 TimedWaiting
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x131467a0 self=0xda564000
+  | sysTid=20893 nice=0 cgrp=default sched=0/0 handle=0xba67a970
+  | state=S schedstat=( 0 0 0 ) utm=0 stm=0 core=7 HZ=100
+  | stack=0xba578000-0xba57a000 stackSize=1038KB
+  | held mutexes=
+  at java.lang.Object.wait(Native method)
+  - waiting on <0x090c58f9> (a java.lang.Object)
+  at java.lang.Thread.parkFor$(Thread.java:2137)
+  - locked <0x090c58f9> (a java.lang.Object)
+  at sun.misc.Unsafe.park(Unsafe.java:358)
+  at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:230)
+  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2101)
+  at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1132)
+  at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1113)
+  at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1087)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1147)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+  at java.lang.Thread.run(Thread.java:764)
+
+"RxCachedWorkerPoolEvictor-1" daemon prio=5 tid=20 TimedWaiting
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x13146910 self=0xda564600
+  | sysTid=20894 nice=0 cgrp=default sched=0/0 handle=0xba375970
+  | state=S schedstat=( 0 0 0 ) utm=0 stm=0 core=6 HZ=100
+  | stack=0xba273000-0xba275000 stackSize=1038KB
+  | held mutexes=
+  at java.lang.Object.wait(Native method)
+  - waiting on <0x06f3f03e> (a java.lang.Object)
+  at java.lang.Thread.parkFor$(Thread.java:2137)
+  - locked <0x06f3f03e> (a java.lang.Object)
+  at sun.misc.Unsafe.park(Unsafe.java:358)
+  at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:230)
+  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2101)
+  at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1132)
+  at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1113)
+  at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1087)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1147)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+  at java.lang.Thread.run(Thread.java:764)
+
+"Firebase Background Thread #0" prio=5 tid=21 Native
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x13140220 self=0xda565200
+  | sysTid=20896 nice=10 cgrp=default sched=0/0 handle=0xba575970
+  | state=S schedstat=( 0 0 0 ) utm=1 stm=2 core=0 HZ=100
+  | stack=0xba473000-0xba475000 stackSize=1038KB
+  | held mutexes=
+  kernel: (couldn't read /proc/self/task/20896/stack)
+  native: #00 pc 00018e50  /system/lib/libc.so (syscall+28)
+  native: #01 pc 000b7d99  /system/lib/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+88)
+  native: #02 pc 003ec5e5  /system/lib/libart.so (art::GoToRunnable(art::Thread*)+308)
+  native: #03 pc 003ec481  /system/lib/libart.so (art::JniMethodEnd(unsigned int, art::Thread*)+8)
+  native: #04 pc 00017a79  /system/framework/arm/boot.oat (Java_java_io_UnixFileSystem_delete0__Ljava_io_File_2+104)
+  at java.io.UnixFileSystem.delete0(Native method)
+  at java.io.UnixFileSystem.delete(UnixFileSystem.java:295)
+  at java.io.File.delete(File.java:1029)
+  at android.app.SharedPreferencesImpl.writeToFile(SharedPreferencesImpl.java:760)
+  at android.app.SharedPreferencesImpl.-wrap2(SharedPreferencesImpl.java:-1)
+  at android.app.SharedPreferencesImpl$2.run(SharedPreferencesImpl.java:599)
+  - locked <0x07045e9f> (a java.lang.Object)
+  at android.app.SharedPreferencesImpl.enqueueDiskWrite(SharedPreferencesImpl.java:618)
+  at android.app.SharedPreferencesImpl.-wrap0(SharedPreferencesImpl.java:-1)
+  at android.app.SharedPreferencesImpl$EditorImpl.commit(SharedPreferencesImpl.java:534)
+  at o.setUrlBarHidingEnabled.AppCollectorConstants(:155)
+  - locked <0x0faaebec> (a o.setUrlBarHidingEnabled)
+  at o.setUrlBarHidingEnabled.getAPP_RDNSannotations(:136)
+  - locked <0x0faaebec> (a o.setUrlBarHidingEnabled)
+  at o.setUrlBarHidingEnabled.AppCollectorConstants(:190)
+  - locked <0x0faaebec> (a o.setUrlBarHidingEnabled)
+  at o.setSecondaryToolbarSwipeUpGesture.getAPP_MEMORY_USAGEannotations(:68)
+  - locked <0x04308bb5> (a o.setSecondaryToolbarSwipeUpGesture)
+  at o.setToolbarCornerRadiusDp.call(:0)
+  at com.google.android.gms.tasks.zzz.run(:1)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1162)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+  at o.setBlockModeCBC.AppCollectorConstants(:47)
+  at o.CryptoObjectUtilsApi28Impl.run(:0)
+  at java.lang.Thread.run(Thread.java:764)
+
+"RxCachedThreadScheduler-1" daemon prio=5 tid=22 Waiting
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x13146a80 self=0xda565800
+  | sysTid=20897 nice=0 cgrp=default sched=0/0 handle=0xba270970
+  | state=S schedstat=( 0 0 0 ) utm=0 stm=0 core=2 HZ=100
+  | stack=0xba16e000-0xba170000 stackSize=1038KB
+  | held mutexes=
+  at java.lang.Object.wait(Native method)
+  - waiting on <0x0b50dad8> (a java.lang.Object)
+  at java.lang.Thread.parkFor$(Thread.java:2137)
+  - locked <0x0b50dad8> (a java.lang.Object)
+  at sun.misc.Unsafe.park(Unsafe.java:358)
+  at java.util.concurrent.locks.LockSupport.park(LockSupport.java:190)
+  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2059)
+  at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1120)
+  at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1113)
+  at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1087)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1147)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+  at java.lang.Thread.run(Thread.java:764)
+
+"Firebase Blocking Thread #0" prio=5 tid=23 TimedWaiting
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x13146bf0 self=0xda565e00
+  | sysTid=20898 nice=11 cgrp=default sched=0/0 handle=0xba16b970
+  | state=S schedstat=( 0 0 0 ) utm=0 stm=0 core=6 HZ=100
+  | stack=0xba069000-0xba06b000 stackSize=1038KB
+  | held mutexes=
+  at java.lang.Object.wait(Native method)
+  - waiting on <0x0f2b2e31> (a java.lang.Object)
+  at java.lang.Thread.parkFor$(Thread.java:2137)
+  - locked <0x0f2b2e31> (a java.lang.Object)
+  at sun.misc.Unsafe.park(Unsafe.java:358)
+  at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:230)
+  at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:461)
+  at java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:362)
+  at java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:937)
+  at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1086)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1147)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+  at o.setBlockModeCBC.AppCollectorConstants(:47)
+  at o.CryptoObjectUtilsApi28Impl.run(:0)
+  at java.lang.Thread.run(Thread.java:764)
+
+"Firebase-Messaging-Topics-Io" prio=5 tid=26 Waiting
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x13146fa0 self=0xba7a1200
+  | sysTid=20902 nice=0 cgrp=default sched=0/0 handle=0xb9d57970
+  | state=S schedstat=( 0 0 0 ) utm=0 stm=0 core=7 HZ=100
+  | stack=0xb9c55000-0xb9c57000 stackSize=1038KB
+  | held mutexes=
+  at java.lang.Object.wait(Native method)
+  - waiting on <0x085bc916> (a java.lang.Object)
+  at java.lang.Thread.parkFor$(Thread.java:2137)
+  - locked <0x085bc916> (a java.lang.Object)
+  at sun.misc.Unsafe.park(Unsafe.java:358)
+  at java.util.concurrent.locks.LockSupport.park(LockSupport.java:190)
+  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2059)
+  at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1120)
+  at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1113)
+  at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1087)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1147)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+  at com.google.android.gms.common.util.concurrent.zza.run(:2)
+  at java.lang.Thread.run(Thread.java:764)
+
+"Firebase-Messaging-Init" prio=5 tid=27 Waiting
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x131472a0 self=0xba7a0c00
+  | sysTid=20901 nice=0 cgrp=default sched=0/0 handle=0xb9e5c970
+  | state=S schedstat=( 0 0 0 ) utm=0 stm=0 core=5 HZ=100
+  | stack=0xb9d5a000-0xb9d5c000 stackSize=1038KB
+  | held mutexes=
+  at java.lang.Object.wait(Native method)
+  - waiting on <0x035d8297> (a java.lang.Object)
+  at java.lang.Thread.parkFor$(Thread.java:2137)
+  - locked <0x035d8297> (a java.lang.Object)
+  at sun.misc.Unsafe.park(Unsafe.java:358)
+  at java.util.concurrent.locks.LockSupport.park(LockSupport.java:190)
+  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2059)
+  at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1120)
+  at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1113)
+  at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1087)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1147)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+  at com.google.android.gms.common.util.concurrent.zza.run(:2)
+  at java.lang.Thread.run(Thread.java:764)
+
+"Firebase Lite Thread #0" prio=5 tid=28 Waiting
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x13640e00 self=0xba7a6200
+  | sysTid=20904 nice=0 cgrp=default sched=0/0 handle=0xb9c52970
+  | state=S schedstat=( 0 0 0 ) utm=0 stm=0 core=7 HZ=100
+  | stack=0xb9b50000-0xb9b52000 stackSize=1038KB
+  | held mutexes=
+  at java.lang.Object.wait(Native method)
+  - waiting on <0x0464cc84> (a java.lang.Object)
+  at java.lang.Thread.parkFor$(Thread.java:2137)
+  - locked <0x0464cc84> (a java.lang.Object)
+  at sun.misc.Unsafe.park(Unsafe.java:358)
+  at java.util.concurrent.locks.LockSupport.park(LockSupport.java:190)
+  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2059)
+  at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+  at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1087)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1147)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+  at o.setBlockModeCBC.AppCollectorConstants(:47)
+  at o.CryptoObjectUtilsApi28Impl.run(:0)
+  at java.lang.Thread.run(Thread.java:764)
+
+"Firebase Blocking Thread #1" prio=5 tid=29 TimedWaiting
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x13641658 self=0xba7abe00
+  | sysTid=20905 nice=11 cgrp=default sched=0/0 handle=0xb9b4d970
+  | state=S schedstat=( 0 0 0 ) utm=4 stm=3 core=5 HZ=100
+  | stack=0xb9a4b000-0xb9a4d000 stackSize=1038KB
+  | held mutexes=
+  at java.lang.Object.wait(Native method)
+  - waiting on <0x07537c6d> (a java.lang.Object)
+  at java.lang.Thread.parkFor$(Thread.java:2137)
+  - locked <0x07537c6d> (a java.lang.Object)
+  at sun.misc.Unsafe.park(Unsafe.java:358)
+  at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:230)
+  at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:461)
+  at java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:362)
+  at java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:937)
+  at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1086)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1147)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+  at o.setBlockModeCBC.AppCollectorConstants(:47)
+  at o.CryptoObjectUtilsApi28Impl.run(:0)
+  at java.lang.Thread.run(Thread.java:764)
+
+"glide-active-resources" prio=5 tid=24 Waiting
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x13640ef0 self=0xba7a1800
+  | sysTid=20906 nice=10 cgrp=default sched=0/0 handle=0xba066970
+  | state=S schedstat=( 0 0 0 ) utm=0 stm=0 core=6 HZ=100
+  | stack=0xb9f64000-0xb9f66000 stackSize=1038KB
+  | held mutexes=
+  at java.lang.Object.wait(Native method)
+  - waiting on <0x07c360a2> (a java.lang.Object)
+  at java.lang.Object.wait(Object.java:422)
+  at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:188)
+  - locked <0x07c360a2> (a java.lang.Object)
+  at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:209)
+  at o.MediaDescriptionCompat.AppCollectorConstants(:128)
+  at o.MediaDescriptionCompat$3.run(:61)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1162)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+  at o.MediaDescriptionCompat$5$1.run(:43)
+  at java.lang.Thread.run(Thread.java:764)
+
+"ConnectivityThread" prio=5 tid=25 Native
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x13641050 self=0xba7a1e00
+  | sysTid=20907 nice=0 cgrp=default sched=0/0 handle=0xb9f61970
+  | state=S schedstat=( 0 0 0 ) utm=0 stm=0 core=2 HZ=100
+  | stack=0xb9e5f000-0xb9e61000 stackSize=1038KB
+  | held mutexes=
+  kernel: (couldn't read /proc/self/task/20907/stack)
+  native: #00 pc 00049ebc  /system/lib/libc.so (__epoll_pwait+20)
+  native: #01 pc 0001b799  /system/lib/libc.so (epoll_pwait+60)
+  native: #02 pc 0001b7c9  /system/lib/libc.so (epoll_wait+12)
+  native: #03 pc 0001008b  /system/lib/libutils.so (android::Looper::pollInner(int)+118)
+  native: #04 pc 0000ff7d  /system/lib/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+32)
+  native: #05 pc 000bb79d  /system/lib/libandroid_runtime.so (android::NativeMessageQueue::pollOnce(_JNIEnv*, _jobject*, int)+24)
+  native: #06 pc 0017600d  /system/framework/arm/boot-framework.oat (Java_android_os_MessageQueue_nativePollOnce__JI+92)
+  at android.os.MessageQueue.nativePollOnce(Native method)
+  at android.os.MessageQueue.next(MessageQueue.java:325)
+  at android.os.Looper.loop(Looper.java:142)
+  at android.os.HandlerThread.run(HandlerThread.java:65)
+
+"Firebase Blocking Thread #2" prio=5 tid=30 TimedWaiting
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x13641230 self=0xba79e800
+  | sysTid=20909 nice=11 cgrp=default sched=0/0 handle=0xb9a48970
+  | state=S schedstat=( 0 0 0 ) utm=0 stm=0 core=0 HZ=100
+  | stack=0xb9946000-0xb9948000 stackSize=1038KB
+  | held mutexes=
+  at java.lang.Object.wait(Native method)
+  - waiting on <0x04edb133> (a java.lang.Object)
+  at java.lang.Thread.parkFor$(Thread.java:2137)
+  - locked <0x04edb133> (a java.lang.Object)
+  at sun.misc.Unsafe.park(Unsafe.java:358)
+  at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:230)
+  at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:461)
+  at java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:362)
+  at java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:937)
+  at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1086)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1147)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+  at o.setBlockModeCBC.AppCollectorConstants(:47)
+  at o.CryptoObjectUtilsApi28Impl.run(:0)
+  at java.lang.Thread.run(Thread.java:764)
+
+"GmsDynamite" prio=5 tid=32 Waiting
+  | group="dynamiteLoader" sCount=1 dsCount=0 flags=1 obj=0x13641438 self=0xda564c00
+  | sysTid=20929 nice=19 cgrp=default sched=0/0 handle=0xb957f970
+  | state=S schedstat=( 0 0 0 ) utm=0 stm=0 core=4 HZ=100
+  | stack=0xb947d000-0xb947f000 stackSize=1038KB
+  | held mutexes=
+  at java.lang.Object.wait(Native method)
+  - waiting on <0x0e387269> (a com.google.android.gms.dynamite.zza)
+  at com.google.android.gms.dynamite.zza.run(:2)
+  - locked <0x0e387269> (a com.google.android.gms.dynamite.zza)
+
+"DefaultDispatcher-worker-1" daemon prio=5 tid=33 TimedWaiting
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x12d811a8 self=0xba7a2a00
+  | sysTid=20962 nice=0 cgrp=default sched=0/0 handle=0xb9403970
+  | state=S schedstat=( 0 0 0 ) utm=1 stm=2 core=7 HZ=100
+  | stack=0xb9301000-0xb9303000 stackSize=1038KB
+  | held mutexes=
+  at java.lang.Object.wait(Native method)
+  - waiting on <0x06482d8f> (a java.lang.Object)
+  at java.lang.Thread.parkFor$(Thread.java:2137)
+  - locked <0x06482d8f> (a java.lang.Object)
+  at sun.misc.Unsafe.park(Unsafe.java:358)
+  at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:353)
+  at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.park(:838)
+  at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.tryPark(:783)
+  at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(:731)
+  at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(:684)
+
+"DefaultDispatcher-worker-3" daemon prio=5 tid=34 TimedWaiting
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x13641cc8 self=0xb978fe00
+  | sysTid=20965 nice=0 cgrp=default sched=0/0 handle=0xb850a970
+  | state=S schedstat=( 0 0 0 ) utm=0 stm=0 core=0 HZ=100
+  | stack=0xb8408000-0xb840a000 stackSize=1038KB
+  | held mutexes=
+  at java.lang.Object.wait(Native method)
+  - waiting on <0x0637281c> (a java.lang.Object)
+  at java.lang.Thread.parkFor$(Thread.java:2137)
+  - locked <0x0637281c> (a java.lang.Object)
+  at sun.misc.Unsafe.park(Unsafe.java:358)
+  at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:353)
+  at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.park(:838)
+  at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.tryPark(:783)
+  at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(:731)
+  at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(:684)
+
+"DefaultDispatcher-worker-2" daemon prio=5 tid=35 TimedWaiting
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x13641e40 self=0xba7a5000
+  | sysTid=20975 nice=0 cgrp=default sched=0/0 handle=0xb8405970
+  | state=S schedstat=( 0 0 0 ) utm=0 stm=0 core=5 HZ=100
+  | stack=0xb8303000-0xb8305000 stackSize=1038KB
+  | held mutexes=
+  at java.lang.Object.wait(Native method)
+  - waiting on <0x055ccc25> (a java.lang.Object)
+  at java.lang.Thread.parkFor$(Thread.java:2137)
+  - locked <0x055ccc25> (a java.lang.Object)
+  at sun.misc.Unsafe.park(Unsafe.java:358)
+  at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:353)
+  at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.park(:838)
+  at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.tryPark(:783)
+  at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(:731)
+  at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(:684)
+
+"Firebase Background Thread #1" prio=5 tid=15 Waiting
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x13642370 self=0xba7a5600
+  | sysTid=21006 nice=10 cgrp=default sched=0/0 handle=0xbac4c970
+  | state=S schedstat=( 0 0 0 ) utm=0 stm=0 core=6 HZ=100
+  | stack=0xbab4a000-0xbab4c000 stackSize=1038KB
+  | held mutexes=
+  at java.lang.Object.wait(Native method)
+  - waiting on <0x085461fa> (a java.lang.Object)
+  at java.lang.Thread.parkFor$(Thread.java:2137)
+  - locked <0x085461fa> (a java.lang.Object)
+  at sun.misc.Unsafe.park(Unsafe.java:358)
+  at java.util.concurrent.locks.LockSupport.park(LockSupport.java:190)
+  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2059)
+  at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+  at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1087)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1147)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+  at o.setBlockModeCBC.AppCollectorConstants(:47)
+  at o.CryptoObjectUtilsApi28Impl.run(:0)
+  at java.lang.Thread.run(Thread.java:764)
+
+"Crashlytics Exception Handler1" prio=5 tid=36 Native
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x13640010 self=0xb97bfa00
+  | sysTid=21042 nice=10 cgrp=default sched=0/0 handle=0xb977f970
+  | state=S schedstat=( 0 0 0 ) utm=0 stm=1 core=1 HZ=100
+  | stack=0xb967d000-0xb967f000 stackSize=1038KB
+  | held mutexes=
+  kernel: (couldn't read /proc/self/task/21042/stack)
+  native: #00 pc 00018e50  /system/lib/libc.so (syscall+28)
+  native: #01 pc 000b7d99  /system/lib/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+88)
+  native: #02 pc 0029c21f  /system/lib/libart.so (art::JNI::GetObjectField(_JNIEnv*, _jobject*, _jfieldID*)+322)
+  native: #03 pc 000153c7  /system/lib/libopenjdk.so (fileOpen+90)
+  native: #04 pc 00014b1d  /system/lib/libopenjdk.so (FileOutputStream_open0+36)
+  native: #05 pc 0002a989  /system/framework/arm/boot.oat (Java_java_io_FileOutputStream_open0__Ljava_lang_String_2Z+96)
+  at java.io.FileOutputStream.open0(Native method)
+  at java.io.FileOutputStream.open(FileOutputStream.java:287)
+  at java.io.FileOutputStream.<init>(FileOutputStream.java:223)
+  at java.io.FileOutputStream.<init>(FileOutputStream.java:171)
+  at o.CustomTabsIntentActivityHeightResizeBehavior.getAPP_RDNSannotations(:414)
+  at o.CustomTabsIntentActivityHeightResizeBehavior.getAPP_BUILDannotations(:103)
+  at o.generateUri.AppCollectorConstants(:110)
+  at o.BrowserActionsFallbackMenuView.getAPP_RDNSannotations(:581)
+  at o.BrowserActionsFallbackMenuView.AppCollectorConstants(:60)
+  at o.BrowserActionsFallbackMenuView$9.getAPP_MEMORY_USAGEannotations(:501)
+  at o.BrowserActionsFallbackMenuView$9.call(:498)
+  at o.onMenuShown$1.then(:105)
+  at com.google.android.gms.tasks.zzc.run(:3)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1162)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+  at o.BrowserActionsIntentBrowserActionsItemId$3$5.getAPP_BUILDannotations(:67)
+  at o.buildOpenInBrowserAction.run(:27)
+  at java.lang.Thread.run(Thread.java:764)
+
+"com.google.firebase.crashlytics.startup1" prio=5 tid=37 Waiting
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x136424e0 self=0xb97d1800
+  | sysTid=21049 nice=10 cgrp=default sched=0/0 handle=0xb8300970
+  | state=S schedstat=( 0 0 0 ) utm=0 stm=0 core=0 HZ=100
+  | stack=0xb81fe000-0xb8200000 stackSize=1038KB
+  | held mutexes=
+  at java.lang.Object.wait(Native method)
+  - waiting on <0x032413ab> (a java.lang.Object)
+  at java.lang.Thread.parkFor$(Thread.java:2137)
+  - locked <0x032413ab> (a java.lang.Object)
+  at sun.misc.Unsafe.park(Unsafe.java:358)
+  at java.util.concurrent.locks.LockSupport.park(LockSupport.java:190)
+  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2059)
+  at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+  at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1087)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1147)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+  at o.BrowserActionsIntentBrowserActionsItemId$3$5.getAPP_BUILDannotations(:67)
+  at o.buildOpenInBrowserAction.run(:27)
+  at java.lang.Thread.run(Thread.java:764)
+
+"Firebase Background Thread #2" prio=5 tid=38 Waiting
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x13642678 self=0xb97d2400
+  | sysTid=21050 nice=10 cgrp=default sched=0/0 handle=0xb81fb970
+  | state=S schedstat=( 0 0 0 ) utm=0 stm=0 core=1 HZ=100
+  | stack=0xb80f9000-0xb80fb000 stackSize=1038KB
+  | held mutexes=
+  at java.lang.Object.wait(Native method)
+  - waiting on <0x059caa08> (a java.lang.Object)
+  at java.lang.Thread.parkFor$(Thread.java:2137)
+  - locked <0x059caa08> (a java.lang.Object)
+  at sun.misc.Unsafe.park(Unsafe.java:358)
+  at java.util.concurrent.locks.LockSupport.park(LockSupport.java:190)
+  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2059)
+  at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+  at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1087)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1147)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+  at o.setBlockModeCBC.AppCollectorConstants(:47)
+  at o.CryptoObjectUtilsApi28Impl.run(:0)
+  at java.lang.Thread.run(Thread.java:764)
+
+"awaitEvenIfOnMainThread task continuation executor1" prio=5 tid=39 Waiting
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x136429a8 self=0xdb228e00
+  | sysTid=21051 nice=10 cgrp=default sched=0/0 handle=0xb80f6970
+  | state=S schedstat=( 0 0 0 ) utm=0 stm=0 core=2 HZ=100
+  | stack=0xb7ff4000-0xb7ff6000 stackSize=1038KB
+  | held mutexes=
+  at java.lang.Object.wait(Native method)
+  - waiting on <0x09b305a1> (a java.lang.Object)
+  at java.lang.Thread.parkFor$(Thread.java:2137)
+  - locked <0x09b305a1> (a java.lang.Object)
+  at sun.misc.Unsafe.park(Unsafe.java:358)
+  at java.util.concurrent.locks.LockSupport.park(LockSupport.java:190)
+  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2059)
+  at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+  at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1087)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1147)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+  at o.BrowserActionsIntentBrowserActionsItemId$3$5.getAPP_BUILDannotations(:67)
+  at o.buildOpenInBrowserAction.run(:27)
+  at java.lang.Thread.run(Thread.java:764)
+
+"Firebase Background Thread #3" prio=5 tid=40 Waiting
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x13642b40 self=0xb97d2a00
+  | sysTid=21052 nice=10 cgrp=default sched=0/0 handle=0xb7ff1970
+  | state=S schedstat=( 0 0 0 ) utm=0 stm=0 core=6 HZ=100
+  | stack=0xb7eef000-0xb7ef1000 stackSize=1038KB
+  | held mutexes=
+  at java.lang.Object.wait(Native method)
+  - waiting on <0x0876a3c6> (a java.lang.Object)
+  at java.lang.Thread.parkFor$(Thread.java:2137)
+  - locked <0x0876a3c6> (a java.lang.Object)
+  at sun.misc.Unsafe.park(Unsafe.java:358)
+  at java.util.concurrent.locks.LockSupport.park(LockSupport.java:190)
+  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2059)
+  at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+  at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1087)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1147)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+  at o.setBlockModeCBC.AppCollectorConstants(:47)
+  at o.CryptoObjectUtilsApi28Impl.run(:0)
+  at java.lang.Thread.run(Thread.java:764)
+
+"Firebase Blocking Thread #3" prio=5 tid=31 Runnable
+  | group="main" sCount=0 dsCount=0 flags=0 obj=0x13641320 self=0xba79ee00
+  | sysTid=20910 nice=11 cgrp=default sched=0/0 handle=0xb9943970
+  | state=R schedstat=( 0 0 0 ) utm=0 stm=0 core=4 HZ=100
+  | stack=0xb9841000-0xb9843000 stackSize=1038KB
+  | held mutexes= "mutator lock"(shared held)
+  at kotlin.jvm.internal.Intrinsics.checkNotNull(:-1)
+  at kotlin.coroutines.ContinuationInterceptor$DefaultImpls.get(:60)
+  at kotlinx.coroutines.CoroutineDispatcher.get(:31)
+  at kotlin.coroutines.CoroutineContext$plus$1.invoke(:36)
+  at kotlin.coroutines.CoroutineContext$plus$1.invoke(:32)
+  at kotlin.coroutines.CoroutineContext$Element$DefaultImpls.fold(:70)
+  at kotlinx.coroutines.Job$DefaultImpls.fold(:112)
+  at kotlinx.coroutines.JobSupport.fold(:25)
+  at kotlin.coroutines.CoroutineContext$DefaultImpls.plus(:32)
+  at kotlin.coroutines.CombinedContext.plus(:111)
+  at kotlinx.coroutines.AbstractCoroutine.<init>(:58)
+  at kotlinx.coroutines.StandaloneCoroutine.<init>(:192)
+  at kotlinx.coroutines.b.launch(:55)
+  at kotlinx.coroutines.BuildersKt.launch(unavailable:1)
+  at kotlinx.coroutines.b.launch$default(:47)
+  at kotlinx.coroutines.BuildersKt.launch$default(unavailable:1)
+  at androidx.datastore.core.SimpleActor.offer(:112)
+  at androidx.datastore.core.SingleProcessDataStore.updateData(:156)
+  at androidx.datastore.preferences.core.PreferenceDataStore.updateData(:84)
+  at androidx.datastore.preferences.core.PreferencesKt.edit(:326)
+  at com.google.firebase.sessions.settings.SettingsCache.updateConfigValue(:112)
+  at com.google.firebase.sessions.settings.SettingsCache.updateSessionCacheDuration(:93)
+  at com.google.firebase.sessions.settings.RemoteSettings$updateSettings$2$1.invokeSuspend(:134)
+  at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(:33)
+  at kotlinx.coroutines.DispatchedTask.run(:108)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1162)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+  at o.setBlockModeCBC.AppCollectorConstants(:47)
+  at o.CryptoObjectUtilsApi28Impl.run(:0)
+  at java.lang.Thread.run(Thread.java:764)
+
+"com.etisalat" prio=5 (not attached)
+  | sysTid=20844 nice=0 cgrp=default
+  | state=S schedstat=( 0 0 0 ) utm=0 stm=0 core=5 HZ=100
+  kernel: (couldn't read /proc/self/task/20844/stack)
+
+----- end 20565 -----

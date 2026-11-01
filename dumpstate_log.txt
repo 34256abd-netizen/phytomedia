@@ -1,0 +1,87 @@
+can't find the pid
+Failed to find: /data/misc/anrd/
+Skipping systrace because '/sys/kernel/debug/tracing/tracing_on' content is '0'
+Setting progress (Shell): 150/5000
+Android does not support qdisc 'mq'
+Android does not support qdisc 'mq'
+Setting progress (Shell): 255/5000
+execvp on command 'ss -eionptu' failed (error: No such file or directory)
+*** command 'ss -eionptu' failed: exit code 1
+Setting progress (Shell): 355/5000
+Setting progress (Shell): 455/5000
+Setting progress (Shell): 555/5000
+/d/pm_qos: Not a directory
+*** command 'ps -A -T -Z -O pri,nice,rtprio,sched,pcy,bit,time' timed out after 12.353s (killing pid 28865)
+open(/bugreports/dumpstate_lshal.txt): No such file or directory
+Setting progress (Shell): 660/5000
+Setting progress (Shell): 765/5000
+Setting progress (Shell): 865/5000
+Setting progress (Shell): 965/5000
+Setting progress (Shell): 1065/5000
+Setting progress (Shell): 1165/5000
+Setting progress (Shell): 1265/5000
+Setting progress (Shell): 1365/5000
+Setting progress (Shell): 1465/5000
+Setting progress (Shell): 1565/5000
+Setting progress (Shell): 1665/5000
+Setting progress (Shell): 1765/5000
+Setting progress (Shell): 1865/5000
+Setting progress (Shell): 1965/5000
+Setting progress (Shell): 2065/5000
+Setting progress (Shell): 2165/5000
+Setting progress (Shell): 2265/5000
+Setting progress (Shell): 2365/5000
+Setting progress (Shell): 2465/5000
+Setting progress (Shell): 2565/5000
+Setting progress (Shell): 2665/5000
+Setting progress (Shell): 2765/5000
+Setting progress (Shell): 2865/5000
+Setting progress (Shell): 2965/5000
+Setting progress (Shell): 3065/5000
+Setting progress (Shell): 3165/5000
+Setting progress (Shell): 3265/5000
+Setting progress (Shell): 3365/5000
+Setting progress (Shell): 3465/5000
+Setting progress (Shell): 3565/5000
+Setting progress (Shell): 3665/5000
+Setting progress (Shell): 3765/5000
+Setting progress (Shell): 3865/5000
+Setting progress (Shell): 3965/5000
+Adding dir /data/log/bt (recursive: 1)
+Duration of '/data/log/bt': 0.005s
+*** command 'logcat -v threadtime -v printable -v uid -d *:v' timed out after 38.601s (killing pid 29511)
+could not kill command 'logcat -v threadtime -v printable -v uid -d *:v' (pid 29511) even with SIGKILL.
+Setting progress (Shell): 4065/5000
+read: unexpected EOF!
+*** command 'logcat -L -b all -v threadtime -v printable -v uid -d *:v' failed: exit code 1
+AddAnrTraceDir(): dump_traces_file=/data/anr/dumptrace_56NGMo, anr_traces_dir=/data/anr
+Dumping current ANR traces (/data/anr/dumptrace_56NGMo) to the main bugreport entry
+Error unlinking temporary trace path /data/anr/dumptrace_56NGMo: Permission denied
+Setting progress (Shell): 4165/5000
+Setting progress (Shell): 4270/5000
+Setting progress (Shell): 4370/5000
+Setting progress (Shell): 4470/5000
+Setting progress (Shell): 4570/5000
+Setting progress (Shell): 4670/5000
+execvp on command 'parse_radio_log /proc/last_radio_log' failed (error: Permission denied)
+*** command 'parse_radio_log /proc/last_radio_log' failed: exit code 1
+Setting progress (Shell): 4770/5000
+Setting progress (Shell): 4870/5000
+No IDumpstateDevice implementation
+Error dumping service info: (Unknown error -1) SveService
+Error dumping service info: (Unknown error -2147483646) dumpstate
+Can't find service: emergency_service
+*** command '/system/bin/dumpsys -t 10 --skip meminfo cpuinfo' timed out after 96.915s (killing pid 31554)
+Setting progress (Shell): 4975/5000
+Adjusting max progress from 5000 to 5505
+Setting progress (Shell): 5085/5505
+Setting progress (Shell): 5205/5505
+*** command '/system/bin/dumpsys -t 30 activity service all' timed out after 30.015s (killing pid 5345)
+could not kill command '/system/bin/dumpsys -t 30 activity service all' (pid 5345) even with SIGKILL.
+*** command '/system/bin/dumpsys -t 30 activity provider all' timed out after 31.931s (killing pid 6377)
+could not kill command '/system/bin/dumpsys -t 30 activity provider all' (pid 6377) even with SIGKILL.
+Setting progress (Shell): 5325/5505
+Adding main entry (bugreport-2025-06-12-19-48-50.txt) from /data/user_de/0/com.android.shell/files/bugreports/bugreport-2025-06-12-19-48-50.tmp to .zip bugreport
+dumpstate id 1 finished around 2025/06/12 19:57:51 (541 s)
+Adding zip text entry main_entry.txt
+dumpstate_log.txt entry on zip file logged up to here

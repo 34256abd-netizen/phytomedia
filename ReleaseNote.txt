@@ -1,0 +1,19 @@
+ZOTAC Firestorm Version 5.0.0.xxx Release Note
+
+
+Version 5.0.0.006E
+.added support for RTX5060
+
+Version 5.0.0.005E
+.added support for RTX5070 / RTX5070Ti varient models RGB Lighting function
+.added support for RTX5060Ti
+
+Version 5.0.0.004E
+.added support for RTX5070
+.corrected User Interface issue
+
+Version 5.0.0.003E
+.added support for RTX5070Ti
+
+Version 5.0.0.002E
+.initial release for RTX5090 / RTX5080 (Blackwell)
